@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html {
+    line-height: inherit !important;
+}
+
+.wow {
+    @include respond( desktop ) {
+        visibility: hidden;
+    }
+}
+
+#mobile_cheat {
+    @include respond( mobile ) {
+        display: none;
+    }
+}
